@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.RegistroActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="@string/titulo_app"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txv_titulo_filme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/titulo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/edt_titulo_filme"
+            app:layout_constraintStart_toStartOf="@+id/edt_titulo_filme"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_titulo_filme"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_titulo"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txv_titulo_filme" />
+
+        <TextView
+            android:id="@+id/txv_genero_filme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/genero"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/edt_genero_filme"
+            app:layout_constraintStart_toStartOf="@+id/edt_genero_filme"
+            app:layout_constraintTop_toBottomOf="@+id/edt_titulo_filme" />
+
+        <EditText
+            android:id="@+id/edt_genero_filme"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_genero"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txv_genero_filme" />
+
+        <TextView
+            android:id="@+id/txv_link_filme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/link_do_filme"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/edt_link_filme"
+            app:layout_constraintStart_toStartOf="@+id/edt_link_filme"
+            app:layout_constraintTop_toBottomOf="@+id/edt_genero_filme" />
+
+        <EditText
+            android:id="@+id/edt_link_filme"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/insira_o_link_aqui"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txv_link_filme" />
+
+        <ImageView
+            android:id="@+id/imv_adicionar_imagem"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/swt_ja_assisti"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_link_filme"
+            app:srcCompat="@drawable/baseline_image_24" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swt_ja_assisti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:minHeight="48dp"
+            android:text="@string/ja_assisti"
+            app:layout_constraintBottom_toBottomOf="@+id/imv_adicionar_imagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imv_adicionar_imagem"
+            app:layout_constraintTop_toTopOf="@+id/imv_adicionar_imagem" />
+
+        <Button
+            android:id="@+id/btn_registrar_filme"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/registrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imv_adicionar_imagem" />
+
+        <Button
+            android:id="@+id/btn_listar_filmes"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/listar_tudo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_registrar_filme" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

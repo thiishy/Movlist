@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Movlist</string>
+    <string name="titulo_app">Movlist</string>
+    <string name="hint_titulo">Insira o título aqui</string>
+    <string name="registrar">Registrar</string>
+    <string name="hint_genero">Insira o gênero aqui</string>
+    <string name="genero">Gênero:</string>
+    <string name="titulo">Título:</string>
+    <string name="assistido">Assistido</string>
+    <string name="salvar">Salvar</string>
+    <string name="hint_nota">Nota</string>
+    <string name="nota">Nota:</string>
+    <string name="listar_tudo">Listar filmes e séries</string>
+    <string name="genero_com_valor">Gênero: %s</string>
+    <string name="titulo_com_valor">Título: %s</string>
+    <string name="nota_com_valor">Nota: %s</string>
+    <string name="sem_nota">Filme/série sem nota</string>
+    <string name="retornar">Retornar para a tela de registro</string>
+    <string name="insira_o_link_aqui">Insira o link aqui</string>
+    <string name="link_do_filme">Link do filme:</string>
+    <string name="ja_assisti">Já assisti</string>
+    <string name="assistir">Assistir</string>
+    <string name="apagar">Apagar</string>
+    <string name="poster_do_filme">Poster do filme</string>
+</resources>
